@@ -1,0 +1,24 @@
+ganadosA=int(input("cuantos juegos gano el jugardor A?"))
+jugadorA=ganadosA
+ganadosB=int(input("cuantos juegos gano el jugador B"))
+jugadorB=ganadosB
+victoriaA=ganadosA-ganadosB
+victoriab=ganadosB-ganadosA
+if ganadosA==5 and ganadosB==5:
+print(f"""
+el juego no ha terminado porque el esta empatado a 5
+elif victoriab==2 and ganadosB>ganadosA: print("el jugadorB gano el juego")
+elif victoriaA==2 and ganadosA>ganadosB:
+print("""
+el jugadora gano el juego con una diferencia de dos punto "")
+elif ganadosA==6 and ganadosB==6:
+print("el juego esta empate a 6")
+elif victoriaA==1 and ganadosA>ganadosB:
+print("""
+el jugadora gano
+por un punto
+elif victoriab==1 and ganadosA<ganadosB:
+print("""
+el jugadorB gano el juego por un punto
+else:
+print("invalido")
