@@ -1,0 +1,11 @@
+altura=float(input("ingresa tu altura en metros")) peso=float(input("ingresa tu peso en kilos")) age=int(input("ingrese su edad"))
+imc= peso / math.pow(altura, 2)
+if age<45:
+if (imc < 22.0): print("su condicion de riesgo es bajo")
+else:
+print("su condicion de riesgo es media")
+else:
+if(imc<22.0):
+print("tu condicion de riesgo es media")
+else:
+print("tu condicion de riesgo es alta")
