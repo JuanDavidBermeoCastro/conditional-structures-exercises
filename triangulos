@@ -1,0 +1,16 @@
+a = float(input("Ingrese el lado a: "))
+b = float(input("Ingrese el lado b: "))
+c = float(input("Ingrese el lado c: "))
+
+if (a + b > c) and (a + c > b) and (b + c > a):
+    # Determinar el tipo de triángulo
+    if a == b == c:
+        tipo = "equilateral"
+    elif a == b or a == c or b == c:
+        tipo = "isosceles"
+    else:
+        tipo = "scalene"
+    
+    print(f"The triangle is valid and it is a {tipo} triangle.")
+else:
+    print("The entered sides do not form a valid triangle.")
