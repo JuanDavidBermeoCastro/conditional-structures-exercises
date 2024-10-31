@@ -1,0 +1,14 @@
+
+
+fecha_nacimiento = input("Enter your birth date (dd/mm/yyyy): ")
+
+fecha_nacimiento = datetime.strptime(fecha_nacimiento, "%d/%m/%Y")
+
+fecha_actual = datetime.now()
+
+edad = fecha_actual.year - fecha_nacimiento.year
+
+if (fecha_actual.month, fecha_actual.day) < (fecha_nacimiento.month, fecha_nacimiento.day):
+    edad -= 1
+
+print(f"Your age is: {edad} years.")
